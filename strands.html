@@ -1,0 +1,113 @@
+<!DOCTYPEhtml>
+<html>
+  <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/style.css">
+    <title>STRANDS WE OFFER</title>
+  </head>
+<section class="vm-section">
+
+    <h2>STRANDS WE OFFER</h2>
+
+    <!-- STEM BUTTON -->
+    <button class="accordion">STEM</button>
+    <div class="panel">
+        <p>
+           <div>Pre Calculus</div>
+           <div>Basic Calculus</div>
+           <div>General Biology 1 & 2</div>
+           <div>General Chemistry 1 & 2</div>
+           <div>Research/Capstone Project</div>
+           <div>Earth Science</div>
+           <div>General Mathematics</div>
+           <div> Statistics And Probability</div>
+           <div>Physical Education & Health</div>
+            <div>Oral Communication</div>
+            <div>Practical Research 1 & 2</div>
+           <div>English for Academic and Professional Purposes(EAPP)</div>
+           <div>Reading And Writing</div>
+           <div>21st Century Literature</div>
+           <div>Personal Development</div>
+           <div>Empowerment Technologies(ICT)</div>
+            <div>Work Immersion</div>
+            <div>Contemporary Philippine Arts from the Region</div>
+            <div>Understanding Culture, Society, and Politics</div>
+        </p>
+    </div>
+    <!-- ABM BUTTON -->
+    <button class="accordion">ABM</button>
+    <div class="panel">
+        <p>
+           <div>Fundamentals of Accountancy, Business, & Management</div>
+           <div>Business Math</div>
+           <div>Applied Economics</div>
+           <div>Oraganization Management</div>
+           <div>Business Finance</div>
+           <div>Entrepreneurship</div>
+           <div>Business Ethics and Social Responsibility</div>
+           <div>English for Academic and Professional Purposes(EAPP)</div>
+            <div>Practical Research 1 & 2</div>
+            <div>Business Enterprise Simulation</div>
+            <div>Work Immersion</div>
+            <div>Oral Communication</div>
+            <div>Principles of Marketing</div>
+            <div>Physical Education and Health</div>
+            <div>Empowerment Technologies</div>
+            <div>General Mathematics</div>
+            <div>Statistics And Probability</div>
+        </p>
+    </div>
+    <!-- HUMMS BUTTON -->
+    <button class="accordion">HUMMS</button>
+    <div class="panel">
+        <p>
+           <div>Creative Writing/Malikhaing</div>
+           <div>Creative Non-Fiction</div>
+            <div>Introduction to World Religions and Belief Systems</div>
+            <div>Philippine Politics and Governance</div>
+            <div>Disciplines and Ideals in the Social Sciences(DISS)</div>
+            <div>Disciplines and Ideas in the Applied Social Sciences (DIASS)</div>
+            <div>Trends, Networks, and Critical Thinking in the 21st Century</div>
+            <div>Community Engagement, Solidarity, and Citizenship</div>
+            <div>Work Immersion</div>
+            <div>Oral Communication</div>
+            <div>Practical Research 1 & 2</div>
+            <div>21st Century Literature</div>
+            <div>Contemporary Philippine Arts from the Region</div>
+            <div>Understanding Culture, Society, and Politics</div>
+        </p>
+    </div>
+  
+  
+</section>
+
+<script>
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach(button => {
+        button.addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            const panel = this.nextElementSibling;
+
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    });
+</script>
+
+<div class="wrapper">
+<!-- NAVIGATION -->
+  <nav>
+ <img src="Logo/NDALogo.png" alt="Logo">
+       <ul>
+     <li><a href="index.html">HOME</a></li>
+     <li><a href="about.html">ABOUT US</a></li>
+      </ul>
+  </nav>
+</html>
+</div>

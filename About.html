@@ -1,0 +1,91 @@
+<!DOCTYPEhtml>
+<html>
+  <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/style.css">
+    <title>ABOUT US</title>
+  </head>
+<section class="vm-section">
+
+    <h2>NOTRE DAME'S VISION MISSION STATEMENT</h2>
+    
+
+    <!-- Vision Button -->
+    <button class="accordion">VISION</button>
+    <div class="panel">
+        <p>
+            A God-centered community of friends, compassionate and dynamic,
+            renowned for its academic excellence, pastoral involvement,
+            option for the poor, and care for the environment under the
+            guidance of Notre Dame our Mother.
+        </p>
+    </div>
+
+    <!-- Mission Button -->
+    <button class="accordion">MISSION</button>
+    <div class="panel">
+        <p>
+            We commit ourselves to pursue academic excellence, programs and activities,
+            to protect and preserve the environment, to facilitate pastoral involvement
+            towards the building and realization of a God-centered and Mary-like community.
+        </p>
+    </div>
+    <!-- Core Values Button -->
+    <button class="accordion">CORE VALUES</button>
+    <div class="panel">
+        <p>
+           <div>Mary-like community</div>
+           <div> Academic excellence</div>
+           <div>Response to the Cry of the Poor</div>
+            <div>Involvement of the Transformation of Society</div>
+            <div>Active Pastoral</div> Involvement
+            <div>Nurturing the environment</div>
+        </p>
+    </div>
+        <!-- History Button -->
+    <button class="accordion">HISTORY</button>
+    <div class="panel">
+        <p>
+       The following year, the name of the school was changed to Notre Dame College until the College Department was phased out in 1952. 
+       The High School Department continued up to the present carrying the new name of Notre Dame Academy. 
+       Fr. Camomot was succeeded by Juan Boltron, then by Fr. Jose Motus, and then by Fr. Jorge Kintanar.
+
+       The last Parish Priest Director of Notre Dame Academy was Fr. Constantino Batoctoy.  He was responsible for the construction 
+       of the present high school building, with the support of the late Julio Cardinal Rosales, one of the proprietors of the school.
+       In school year 1969-70, Cardinal Julio Rosales installed Sr. Lilia Hilarion, a ICM nun, as the first Directress and Principal of 
+        Notre Dame Academy.
+
+        </p>
+    </div>
+
+ 
+</section>
+
+<script>
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach(button => {
+        button.addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            const panel = this.nextElementSibling;
+
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    });
+</script>
+<div class="wrapper">
+<!-- NAVIGATION -->
+  <nav>
+ <img src="Logo/NDALogo.png" alt="Logo">
+       <ul>
+     <li><a href="index.html">HOME</a></li>
+     <li><a href="strands.html">STRANDS WE OFFER</a></li>
+      </ul>
+  </nav>
+</html>

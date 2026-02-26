@@ -1,0 +1,393 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #f4f8f4;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400; /* Normal text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Bold headers */
+}
+
+/* HEADER */
+header {
+    background-color: #006400; /* Dark Green */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* NAVIGATION */
+nav {
+    background: #008000; /* Green */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+nav img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4ffd4;
+}
+
+
+.hero {
+    position: relative;
+    background: url("img/jpeg-optimizer_shs3.jpg") center/cover no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.hero .section h1 {
+   color: white;
+}
+.hero .section{
+    position: relative;
+    z-index: 2;
+}
+
+.btn-1 {
+    position: relative;
+    overflow: hidden;
+    background-color: #0f5c2e; /* Notre Dame green */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-1 {
+    background-color: #0f5c2e;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #1e8449;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 92, 46, 0.4);
+}
+
+
+.section h1 {
+    color: #006400;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+/* BUTTON */
+button,
+.btn-1,
+.apply {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover,
+.btn-1:hover,
+.apply:hover {
+    background-color: #004d00;
+}
+
+/* FEATURES */
+.features {
+    margin-top: 20px;
+}
+
+.features button {
+    margin: 10px;
+}
+
+/* FACULTY SECTION */
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #006400;
+}
+
+/* PROFILE CARDS */
+.grid-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;   /* Enables horizontal scroll */
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+/* Hide ugly scrollbar (optional, cleaner look) */
+.grid-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.grid-container::-webkit-scrollbar-thumb {
+    background: #1e8449;
+    border-radius: 10px;
+}
+
+.profile {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.profile:hover {
+    transform: translateY(-5px);
+}
+
+.img-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #006400;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-weight: bold;
+    color: #006400;
+}
+
+.role {
+    color: gray;
+    font-size: 14px;
+}
+
+/* STRANDS SECTION */
+.showcase {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #006400;
+}
+
+.strands {
+    display: flex;
+    gap: 20px;            
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.strands > div {
+    min-width: 300px;
+    flex-shrink: 0;     
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.strands::-webkit-scrollbar {
+    height: 8px;
+}
+
+.strands img {
+    width: 120px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.strands::-webkit-scrollbar-thumb {
+    background: #0f5c2e;   /* School green */
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+.vm-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.vm-section h2 {
+    margin-bottom: 30px;
+    color: #0f5c2e;
+}
+
+/* Accordion Buttons */
+.accordion {
+    background-color: #0f5c2e;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 10px auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.accordion:hover {
+    background-color: #1e8449;
+}
+
+/* Hidden Panel */
+.panel {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 15px auto;
+    background-color: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    border-left: 4px solid #1e8449;
+    border-right: 4px solid #1e8449;
+    border-bottom: 4px solid #1e8449;
+    border-radius: 0 0 10px 120px
+    box-shadow: 0.4px 8px rgba(0,0,0,0.08);
+}
+
+.panel p {
+    padding: 20px;
+    color: #1b3d2f;
+}
+
+.login-container {
+  padding: 40px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #2e59d9;
+}
+
+.signup-text {
+  font-size: 10px;
+}
+/* Default (desktop) */
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+}
